@@ -53,7 +53,7 @@ Editor.defaultConfig = {
             'redo'
         ]
     },
-    language: 'fr'
+    language: 'en'
 };
 
 export default {Editor, EditorWatchdog};
