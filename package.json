@@ -1,5 +1,5 @@
 {
-  "name": "simple-ckeditor5-build",
+  "name": "@lk77/simple-ckeditor5-build",
   "author": "CKSource",
   "description": "A simple CKEditor 5 build.",
   "version": "1.0.0",
@@ -27,5 +27,19 @@
   },
   "scripts": {
     "build": "webpack --mode production"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lk77/simple-ckeditor5-build.git"
+  },
+  "keywords": [
+    "simple",
+    "ckeditor5",
+    "build"
+  ],
+  "bugs": {
+    "url": "https://github.com/lk77/simple-ckeditor5-build/issues"
+  },
+  "homepage": "https://github.com/lk77/simple-ckeditor5-build#readme"
 }
