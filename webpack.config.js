@@ -14,19 +14,19 @@ const {CKEditorTranslationsPlugin} = require('@ckeditor/ckeditor5-dev-translatio
 const TerserWebpackPlugin = require('terser-webpack-plugin');
 
 module.exports = {
-    devtool: 'source-map',
+    devtool: false,
     performance: {hints: false},
 
     entry: path.resolve(__dirname, 'src', 'ckeditor.js'),
 
     output: {
-        // The name under which the editor will be exported.
-        library: 'CKSource',
-
         path: path.resolve(__dirname, 'build'),
         filename: 'ckeditor.js',
-        libraryTarget: 'umd',
-        libraryExport: 'default'
+        library: {
+            name: 'CKSource',
+            export: 'default',
+            type: 'umd'
+        },
     },
 
     optimization: {
